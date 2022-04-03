@@ -1,7 +1,6 @@
 """
 @author: Mateusz779
 """
-import re
 pointer = 0
 cell = []
 code = ""
@@ -15,22 +14,10 @@ def main():
     global code, cell, pointer
     code = input("Enter the code: ")
     print("\n\n")
-    code=codeClear(code)
     if code != "":
         for i in range(len(code)):
             interpreter(code[i], i)
     print("\n\n")
-
-def codeClear(input):
-    """
-    Clears the code from unnecessary characters
-    """
-    pattern = "[\][\[\,\.\>\<\-\+]"
-    tmp=re.findall(pattern, input)
-    result=""
-    for i in range(len(tmp)):
-        result+=tmp[i]
-    return result
 
 def interpreter(znak, i):
     """
