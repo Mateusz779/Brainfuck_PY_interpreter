@@ -1,3 +1,6 @@
+"""
+@author: Mateusz779
+"""
 import re
 pointer = 0
 cell = []
