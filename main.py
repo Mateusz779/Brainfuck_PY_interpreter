@@ -22,7 +22,7 @@ def main():
 def interpreter(znak, i):
     """
     Brainfuck interpreter
-
+    
     > increment the data pointer (to point to the next cell to the right).
     < decrement the data pointer (to point to the next cell to the left).
     + increment (increase by one) the byte at the data pointer.
